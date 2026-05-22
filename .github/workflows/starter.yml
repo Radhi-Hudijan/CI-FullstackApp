@@ -26,9 +26,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Install the dependencies.
+      # Install the dependencies add path to backend and frontend
       - name : Install dependencies
-        run: npm install 
+        run: cd backend && npm install
+       
 
       # Run the tests.
       - name: Run tests
