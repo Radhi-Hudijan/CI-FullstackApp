@@ -32,11 +32,11 @@ jobs:
        
 
       # Run the tests.
-      - name: Run tests
+      - name: Run tests in backend
         run: cd backend && npm test
 
       # Run the linter.
-      - name: Run linter
+      - name: Run linter in backend
         run: cd backend && npm run lint
 
       # Send a console message at completion.
